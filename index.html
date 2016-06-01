@@ -1,84 +1,193 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-<link href="css/qiche.css" type="text/css" rel="stylesheet">
-<title>汽车导购分享</title>
-<script>
-	  function closeAD(id){
-    	var ad = document.getElementById(id);
-    	ad.style.display="none";
-	}
-</script>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+    <title>首页</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollify.min.js"></script>
+    <script>
+    $(function() {
+        $.scrollify({
+            section: '.deep-main',
+            scrollbars: false
+        });
+    });
+    </script>
 </head>
 
 <body>
-<div class="xqBox">
-	<header class="appDown" id="close">
-			<div class="qiche_logo"><img src="images/logo_qiche.png"><div class="logo_text"><h3>海量信息</h3><p>订制化阅读</p></div></div>
-			<a href="javascript:;" title="" class="appClose" onclick="closeAD('close')"></a>
-			<a href="#" title="" class="appXiaz">下载应用</a>
-	</header>
-	<div class="share_cont">
-		<section class="xqCont">
-			<h1>新宝马1系</h1>
-			<h3><em class="expand_bg">推广</em><time>08-15&nbsp;&nbsp;&nbsp;&nbsp;09:34</time><span>王文龙</span></h3>
-			<article class="zMain">
-				<div class="testdiv"><p><img src="images/video.jpg" /></p></div>
-				<p>老款F20 1系的前脸4年来一直是宝马车迷们的心病，而直到近日新1系官图的出现，1系的前脸才恢复了宝马应有的审美。</p>
-				<div class="testdiv"><p><img src="images/img01.jpg" /></p></div>
-				<h3 style="font-style:italic;font-weight:600;color:rgb(89,87,87);text-decoration:underline">外观方面</h3>
-				<p>车灯的变化是外观改变中最明显的，从老款大三角车灯换成更加纤细的车灯，同时进气格栅变得更宽，这使得前脸看上去更加专注、运动、并拥有一些现代化的感觉。</p>
-				<div class="testdiv"><p><img src="images/img02.jpg" /></p></div>
-				<h3 style="font-style:italic;font-weight:600;color:rgb(89,87,87);text-decoration:underline">内饰方面</h3>
-				<p>6.5英寸显示屏将会是标配，搭载的iDrive系统将会配有ConnectedDrive互联驾驶功能，它会让你获得更强的驾驶乐趣。首先是安全层面，选装的驾驶辅助套件能非常神奇的辅助你驾驶。</p>
-			</article>
-			<div class="label_cont"><span class="label_ico"></span><em>进口</em><em>1系</em><em>10w-15w</em></div>
-			<div class="related_link">
-				<p class="related_line"><strong>相关链接</strong></p>
-				<ul class="related_cont">
-					<li><a href="#" title="">奔驰S级迈巴赫车型首发</a></li>
-					<li><a href="#" title="">奔驰全新GLE coupe亮相车展</a></li>
-					<li><a href="#" title="">北京奔驰C300L谍照曝光</a></li>
-				</ul>
-			</div>
-		</section>
-		<div class="comment_cont">
-			<ul>
-				<li>
-					<div class="comment_user"><img src="images/head_unknow@2x.png" alt="" /></div>
-					<aside class="comment_subjet">
-						<cite>汽车的狂欢<span class="ico_collect_on">7<i></i></span></cite>
-						<p>内饰用竹质材料，可谓是特立独行。</p>
-						<time>01-17&nbsp;&nbsp;&nbsp;&nbsp;15:22</time>
-					</aside>
-				</li>
-				<li>
-					<div class="comment_user"><img src="images/head_unknow@2x.png" alt="" /></div>
-					<aside class="comment_subjet">
-						<cite>爱马爱车<span class="ico_collect_off">19<i></i></span></cite>
-						<p>回复<mark>汽车的狂欢</mark>：竹质的饰板和方向盘外壳带来的触感与木质材料有所区别，对于中国消费者来说，竹质材</p>
-						<time>01-17&nbsp;&nbsp;&nbsp;&nbsp;15:24</time>
-					</aside>
-				</li>
-				<li>
-					<div class="comment_user"><img src="images/head_unknow@2x.png" alt="" /></div>
-					<aside class="comment_subjet">
-						<cite>动感单车<span class="ico_collect_off">19<i></i></span></cite>
-						<p>身处这样一个处处充满细节雕琢的汽车内室中，总是有很多惊喜。</p>
-						<time>2014-12-31&nbsp;&nbsp;&nbsp;&nbsp;10:54</time>
-					</aside>
-				</li>
-			</ul>
-			<p class="check_more"><a href="javascript:;">点击显示更多消息</a></p>
-		</div>
-	</div>
-	<footer class="publish_cont">
-		<input type="text" placeholder="说两句吧">
-		<span><i class="ico_comment"></i>378</span>
-	</footer>
-	
-</div>
+    <!--头部开始-->
+    <header class="deep-header">
+        <div class="content deep-h">
+            <div class="deep-logo"></div>
+            <!--头部导航开始-->
+            <ul class="deep-h-nav" style="margin-right: 5%">
+                <li class="current">
+                    <a href="#n1">首页<br/><b>Home</b></a>
+                </li>
+                <li>
+                    <a href="#n2">服务范围<br/><b>Service</b></a>
+                </li>
+                <li>
+                    <a href="#n4">关于深度<br/><b>About</b></a>
+                </li>
+                <li>
+                    <a href="#n3">联系我们<br/><b>Contact</b></a>
+                </li>
+            </ul>
+            <!--头部导航结束-->
+        </div>
+        <!--头部按钮-->
+    </header>
+    <!--头部结束-->
+    <!--内1开始-->
+    <section class="deep-main" id="n1">
+        <div class="content">
+            <div class="main-home"><img src="img/home-sd.png" class="home-img" /><div class="main-xia"><img src="img/deep-xia.png" /></div></div>
+            
+        </div>
+    </section>
+    <!--内容1结束-->
+    <!--服务范围开始-->
+    <section class="deep-main" id="n2">
+        <div class="content">
+            <div class="main-home">
+                <h1>SERVICE / 服务范围</h1>
+                <p class="servic-p">what can we do</p>
+            </div>
+            <div class="main-home">
+                <ul class="main-servic">
+                    <li>
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <a href="#">
+                            <i></i>
+                            <h3 class="servic-h3">高端定制网站</h3>
+                            <div class="hon">
+                                <p class="hon-z">企业高端定制网页设计</p>
+                                <p>为您打造一款自己风格的网站</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <a href="#">
+                            <i class="ydd"></i>
+                            <h3 class="servic-h3">移动端 H5</h3>
+                            <div class="hon">
+                                <p class="hon-z">打造手机网站/ 微网站制作</p>
+                                <p>布局移动互联网</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <a href="#">
+                            <i class="appkf"></i>
+                            <h3 class="servic-h3">APP开发</h3>
+                            <div class="hon">
+                                <p class="hon-z">iOS / Andriod应用开发</p>
+                                <p>掌控智能终端时代</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <a href="#">
+                            <i class="uisj"></i>
+                            <h3 class="servic-h3">UI设计</h3>
+                            <div class="hon">
+                                <p class="hon-z">平面设计 / icon图标设计</p>
+                                <p>人机交互、操作逻辑、界面美观的整体设计</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <a href="#">
+                            <i class="ysfw"></i>
+                            <h3 class="servic-h3">印刷服务</h3>
+                            <div class="hon">
+                                <p class="hon-z">设计印刷一站式服务</p>
+                                <p>价格低，质量优，服务贴心</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--服务范围结束-->
+    <!--关于深度开始-->
+    <section class="deep-main" id="n3">
+        <div class="content">
+            <div class="main-home">
+                <h1 class="about-h1">ABOUT /关于深度 </h1>
+                <div class="about-cen">
+                    <img src="img/about.png" />
+                </div>
+                <div class="about-cl">
+                    <div class="about-clt ri"></div>
+                    <div class="ri wenzi">北京深度设计工作室<br/>成立于2014年</div>
+                    <span>成立</span>
+                </div>
+                <div class="about-cl about-zz">
+                    <div class="about-clt ri"></div>
+                    <div class="ri wenzi">专注于Android与IOS操作系统app开发、UI设计、网页设计、等，提供专业Android与IOS操作系统app开发。</div>
+                    <span>专注</span>
+                </div>
+                <div class="about-cl about-ln">
+                    <div class="about-clt fl"></div>
+                    <div class="fl wenzi">以“深入思维，把控有度”为理念，基于设计与开发的切合性，辅以至臻至诚的契约精神，更以严谨、专业的设计视角为每一位客户提供最佳可执行性的解决方案。</div>
+                    <span>理念</span>
+                </div>
+                <div class="about-cl about-ln about-fx">
+                    <div class="about-clt fl"></div>
+                    <div class="fl wenzi">从繁至简的“触屏时代”，用户体验至上。让用户在尺寸与触感之间感受点击的喜悦，增加用户的记忆力、专注力与思考力，让无限体验凝聚在指尖。</div>
+                    <span>方向</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--关于深度结束-->
+    <!--联系我们开始-->
+    <section class="deep-main" id="n4">
+        <div class="content">
+            <div class="main-home">
+                <h1 class="contact-h1">CONTACT/ 联系我们</h1>
+            </div>
+            <div class="main-contact">
+                <span class="cont1"><img src="img/erwema1.png" ></span>
+                <span><p class="cont2">18201626428</p><p>中国·北京·北京深度设计工作室</p><p>联系人：谌风</p><p>联系电话：18201626428</p><p>地址：北京海淀区清河永泰园（地铁8号线永泰庄站）</p><p style="margin-top:50px">QQ：66326710</p><p>微 信 号：chenfeng358</p></span>
+            </div>
+        </div>
+    </section>
+    <!--联系我们结束-->
+    <!--右侧悬浮开始-->
+    <div class="side">
+        <ul>
+            <li>
+                <a href="tencent://message/?uin=541592004&Site=qq&Menu=yes" target="_blank">
+                    <img src="img/img1.png" /></a>
+            </li>
+            <li>
+                <img src="img/img2.png" />
+            </li>
+            <li class="gototop">
+                <img src="img/img3.png" />
+            </li>
+        </ul>
+    </div>
+    <!--右侧悬浮结束-->
 </body>
+
 </html>
